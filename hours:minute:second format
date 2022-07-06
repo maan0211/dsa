@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main(){
+int total_second,h,m,s;
+printf("please enter the value of total second:");
+scanf("%d",&total_second);
+h = (total_second/3600);
+m = (total_second%3600)/60;
+s = total_second - (h*3600+m*60);
+printf("DIGITAL WATCH \n");
+printf("Hours:Minute:Second\n");
+printf("%02d:%02d:%02d",h,m,s);
+return 0;
+}
